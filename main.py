@@ -8,6 +8,10 @@ from time import sleep
 import os
 import random
 
+
+    
+
+
 class color:
    PURPLE = '\033[95m'
    CYAN = '\033[96m'
@@ -24,13 +28,16 @@ class color:
    OKGREEN = '\033[92m'
    WARNING = '\033[93m'
    FAIL = '\033[91m'
-
+   
 #os.system('pkg update')
 #os.system('pkg upgrade')
 
-for num in range(101):
-    print(color.YELLOW+'\rStarting: {}%'.format(num)+color.END,end='',flush=True)
-    time.sleep(random.uniform(0.0007,0.008))
+class Accept:
+    def accept():
+        print (color.RED+"\n\n[•]Сейчас будет выполнена проверка\n\t и установка доп. репозиторий. \n"+color.END)
+        time.sleep(1)
+        os.system('cd Terax && git clone https://github.com/MaFi0Ze/dir-terax')
+
 class Main:
     def mainpage(self):
         text1=['']*2
