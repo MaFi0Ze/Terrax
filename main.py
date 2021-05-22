@@ -38,6 +38,8 @@ class Accept:
         time.sleep(1)
         os.system('cd Terax && git clone https://github.com/MaFi0Ze/dir-terax')
 
+Accept.accept()
+
 class Main:
     def mainpage(self):
         text1=['']*2
