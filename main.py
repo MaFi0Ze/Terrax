@@ -36,9 +36,7 @@ class Accept:
     def accept():
         print (color.RED+"\n\n[•]Сейчас будет выполнена проверка\n\t и установка доп. репозиторий. \n"+color.END)
         time.sleep(1)
-        os.system('cd Terax && git clone https://github.com/MaFi0Ze/dir-terax')
-
-Accept.accept()
+        os.system('cd Terrax && git clone https://github.com/MaFi0Ze/dir-terrax')
 
 class Main:
     def mainpage(self):
